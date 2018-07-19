@@ -899,13 +899,13 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 /*questions page*/
 
 .questions{
-    background: url(../img/img22.png);
-    background-size: cover;
-    background-position: center;
-    border-top: 3px solid #ffb000;
-    text-align: center;
-    border-radius: 0 0 20px 20px;
-    padding: 40px 40px;
+  background: url(../img/img22.png);
+  background-size: cover;
+  background-position: center;
+  border-top: 3px solid #ffb000;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  padding: 40px 40px;
 }
 
 .questions .p{font-size: 24px; color:#fff; text-transform: uppercase; margin: 0 0px 30px 0px;font-family:PTSansBold, Geneva, Arial, Helvetica, sans-serif;}
@@ -914,21 +914,21 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 .questions .p span:last-child{margin-left: 20px;}
 
 .questions-form input[type="text"], .questions-form input[type="email"] {
-    height: 49px;
-    padding: 0px 20px;
-    font-size: 14px;
-    border-radius: 8px;
-   	width: 100%;	
+  height: 49px;
+  padding: 0px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  width: 100%;	
 }
 
 .questions-form  textarea {
 	width: 38%;
-    height: 94px;
-    resize: none;
-    padding: 20px 35px;
-    font-family:PTSansRegular, sanserif;
-    font-size: 14px;
-    background: #fff url(../img/img14.png) no-repeat 12px 18px;
+  height: 94px;
+  resize: none;
+  padding: 20px 35px;
+  font-family:PTSansRegular, sanserif;
+  font-size: 14px;
+  background: #fff url(../img/img14.png) no-repeat 12px 18px;
 	overflow: hidden;
 	border-radius: 8px;
 } 
@@ -982,11 +982,11 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 .questions-form__bottom{
 	max-width: 584px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 30px;
-    color:#fff;
-    font-family:PTSansRegular, Geneva, Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  color:#fff;
+  font-family:PTSansRegular, Geneva, Arial, Helvetica, sans-serif;
 }
 
 .questions-form__bottom a{
@@ -1051,11 +1051,9 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	border: 8px solid transparent;
 	border-top: 8px solid #ffb800;
 	position: absolute;
-    right: 50%; 
-    top: 0;
+  right: 50%; 
+  top: 0;
 }
-
-
 
 .card__top{
 	display: -webkit-flex;
@@ -1125,11 +1123,9 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 		width: 48px;
 	}
 
-
 	.questions-form__bottom span{
 		font-size: 14px;	
 	}
-
 
 	.card__answer{
 		margin-left: 0px;
@@ -1141,11 +1137,12 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 .card__media{
 	margin-left: auto;
-    margin-top: 12px;
-    display: flex;
-    list-style: none;
-    color: #ffb800;
+  margin-top: 12px;
+  display: flex;
+  list-style: none;
+  color: #ffb800;
 }
+
 .card__media li{
 	margin-left: 5px;
 }
@@ -1156,9 +1153,9 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 .questions-form__media{
 	display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .questions-form__media h3{
@@ -1168,8 +1165,8 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 @media only screen and (max-width:448px){
 	.card__media{
-	    margin-left: -46px;
-    	align-self: flex-start;
+    margin-left: -46px;
+    align-self: flex-start;
 	}
 
 	.testimonials-card .card__top{
@@ -1183,11 +1180,11 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	.testimonials-card .card__content{
 		margin-left: 0;
 	}
+
 	.testimonials{
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-
 }
 
 @media only screen and (max-width:1000px){
@@ -1195,7 +1192,6 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 		margin-top: 50px;
 	}
 }
-
 
 /*testimonials page END*/
 
@@ -1267,11 +1263,12 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
   display: -o-flex;
   display: flex;
   align-items: center;
-  margin-top: 30px;
 	font-family:PTSansRegular, Geneva, Arial, Helvetica, sans-serif;
 }
 
-
+.card-map .card__item:first-child{
+  margin-bottom: 30px;
+}
 
 .card-map .card__img{
 	max-width: 50px;
@@ -1282,8 +1279,6 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	padding-left: 20px;
   margin: 0;
 }
-
-
 
 .card__item span{
 	color: #ffbf00;
@@ -1307,6 +1302,11 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
     flex-direction: column;
     align-items: center;
   }
+  
+  .card-map .card__left{
+    margin-bottom: 30px;
+  }
+
   .card-map .card__left,.card-map .card__right{
     max-width: 245px;
     width: 100%;
@@ -1314,10 +1314,6 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 }
 
 @media only screen and (max-width:760px){
-	.card-map .card-top{
-		
-	}
-
 	.contacts .questions-form__input{
 		flex-direction: column;
 	}
@@ -1329,7 +1325,6 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	.contacts .questions-form input[type="text"]{
 		margin-bottom: 20px;
 	}
-	
 }
 
 #map{
@@ -1342,13 +1337,14 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 		height: 250px;
 		margin-top: 20px;
 	}
-	
 }
+
 @media only screen and (max-width:448px){
 	.card-map .card-top{
-   		margin: -19px -20px 0 -20px;
-      padding: 30px 27px;
+   	margin: -19px -20px 0 -20px;
+    padding: 30px 27px;
 	}
+
   .card-map .card__left,.card-map .card__right{
     width: 100%;
   }
