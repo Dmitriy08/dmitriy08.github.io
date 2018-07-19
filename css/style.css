@@ -1004,6 +1004,8 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	display: -o-flex;
 	display: flex;
 	align-items: center;
+	margin-left: -26px;
+	margin-right: -26px;
 }
 
 .questions-form__bottom .button{
@@ -1124,7 +1126,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 
 	.questions-form__bottom span{
-		font-size: 11px;	
+		font-size: 14px;	
 	}
 
 
