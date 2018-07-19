@@ -12,6 +12,14 @@ url(../fonts/PTSansRegular.eot);}
        font-weight:800;
        font-style: normal;  
 }
+@font-face {
+  font-family: 'FontAwesome';
+   src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+         url('../fonts/fontawesome-webfont.woff') format('woff'),
+         url("../fonts/fontawesome-webfont.ttf");
+       font-weight:400;
+       font-style: normal;  
+}
 @font-face{font-family:PTSansItalic;src:url(../fonts/PTSansItalic.ttf),
 url(../fonts/PTSansItalic.eot);}
 .test{}
@@ -1032,6 +1040,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	color:#fff;
 	margin-top: 30px;
 	position: relative;
+	font-family:PTSansRegular, Geneva, Arial, Helvetica, sans-serif;
 }
 
 .card::before{
@@ -1043,14 +1052,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
     top: 0;
 }
 
-.card__img{
-	width: 80px;
-	height: 80px;
-	border-radius:50%;
-	background-color: #00bfff;
-	text-align: center;
-	line-height:96px;
-}
+
 
 .card__top{
 	display: -webkit-flex;
@@ -1071,6 +1073,21 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 .card__answer{
 	margin-left: 80px;
+}
+
+.card__img{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	max-width: 80px;
+	width: 100%;
+	height:80px;
+	border-radius: 50%;
+	background-color: #00bfff;
+	justify-content: center;
+	align-items: center;
 }
 
 @media only screen and (max-width:760px){
@@ -1122,6 +1139,12 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 .card__media{
 	margin-left: auto;
     margin-top: 12px;
+    display: flex;
+    list-style: none;
+    color: #ffb800;
+}
+.card__media li{
+	margin-left: 5px;
 }
 
 .testimonials .span{
@@ -1142,9 +1165,26 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 @media only screen and (max-width:448px){
 	.card__media{
-	    margin-left: 0;
+	    margin-left: -46px;
     	align-self: flex-start;
 	}
+
+	.testimonials-card .card__top{
+		flex-direction: column;
+	}
+
+	.testimonials-card .card__title{
+		margin-left: 0;
+	}
+
+	.testimonials-card .card__content{
+		margin-left: 0;
+	}
+	.testimonials{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
 }
 
 @media only screen and (max-width:1000px){
@@ -1152,6 +1192,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 		margin-top: 50px;
 	}
 }
+
 
 /*testimonials page END*/
 
@@ -1206,7 +1247,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: #033d6d;
-	margin: -30px -40px 0 -40px;
+    margin: -30px -40px 0 -40px;
     padding: 30px 40px;
 }
 
@@ -1222,23 +1263,16 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	margin-top:30px;
 }
 
+.card-map .card__img{
+	max-width: 50px;
+	height: 50px;
+}
+
 .card-map p, .card-map a{
 	padding-left: 20px;
 }
 
-.card-map .card__item:nth-child(3) .card__img img{
-	padding-bottom: 6px;
-}
 
-.card-map .card__item:nth-child(4) .card__img{
-	padding: 0 7px;
-}
-
-.card-map .card__img{
-	width: 50px;
-	height: 50px;
-	line-height: 70px;
-}
 
 .card__item span{
 	color: #ffbf00;
@@ -1295,11 +1329,46 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 @media only screen and (max-width:425px){
 	#map{
 		height: 250px;
-		margin:0 -20px;
 		margin-top: 20px;
+	}
+	
+}
+@media only screen and (max-width:448px){
+	.card-map .card-top{
+   		margin: -19px -20px 0 -20px;
 	}
 }
 /*contacts page END*/
 
 
 
+.star-rating{
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 1rem;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #FFB300;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+}
