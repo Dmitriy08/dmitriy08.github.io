@@ -961,7 +961,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	display: flex;
 	flex-direction: column;
 }
-
+ 
 .questions-form__top{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -974,7 +974,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 .questions-form__input{
 	display: -webkit-flex;
 	display: -moz-flex;
-	display: -ms-flex;
+	display: -ms-flex; 
 	display: -o-flex;
 	display: flex;
 	flex-direction: column;
@@ -986,6 +986,7 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
     margin: 0 auto;
     margin-top: 30px;
     color:#fff;
+    font-family:PTSansRegular, Geneva, Arial, Helvetica, sans-serif;
 }
 
 .questions-form__bottom a{
@@ -1232,8 +1233,8 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	border: 8px solid transparent;
 	border-top: 8px solid #ffb800;
 	position: absolute;
-    right: 50%; 
-    top: 0;
+  right: 50%; 
+  top: 0;
 }
 
 .card-map .card{
@@ -1249,21 +1250,28 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: #033d6d;
-    margin: -30px -40px 0 -40px;
-    padding: 30px 40px;
+  margin: -30px -40px 0 -40px;
+  padding: 30px 40px;
+}
+
+.card-map .card__left,.card-map .card__right{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .card-map .card__item{
-	display: flex;
-    align-items: center;
-    max-width: 384px;
-	width:100%;
+	display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
 	font-family:PTSansRegular, Geneva, Arial, Helvetica, sans-serif;
 }
 
-.card-map .card__item:nth-child(n+3){
-	margin-top:30px;
-}
+
 
 .card-map .card__img{
 	max-width: 50px;
@@ -1272,16 +1280,17 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 
 .card-map p, .card-map a{
 	padding-left: 20px;
+  margin: 0;
 }
 
 
 
 .card__item span{
 	color: #ffbf00;
-    font-size: 27px;
-    vertical-align: sub;
-    margin-left: 5px;
-    font-weight: bold;
+  font-size: 27px;
+  vertical-align: sub;
+  margin-left: 5px;
+  font-weight: bold;
 }
 
 .card__item a{
@@ -1293,20 +1302,20 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 	text-decoration: none;
 }
 
-@media only screen and (max-width:1170px){
-	.card-map .card__item{
-		max-width: 290px;
-	}
+@media only screen and (max-width:600px){
+  .card-map .card-top{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-map .card__left,.card-map .card__right{
+    max-width: 245px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width:760px){
 	.card-map .card-top{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.card-map .card__item:nth-child(n+2){
-		margin-top:20px;
+		
 	}
 
 	.contacts .questions-form__input{
@@ -1338,8 +1347,13 @@ blockquote{display:block;-webkit-margin-before:1em;-webkit-margin-after:1em;-web
 @media only screen and (max-width:448px){
 	.card-map .card-top{
    		margin: -19px -20px 0 -20px;
+      padding: 30px 27px;
 	}
+  .card-map .card__left,.card-map .card__right{
+    width: 100%;
+  }
 }
+
 /*contacts page END*/
 
 
